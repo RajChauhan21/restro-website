@@ -2,8 +2,8 @@
     <section id="hero" class="relative min-h-[70vh] md:min-h-screen flex items-center justify-center overflow-hidden">
 
         <!-- Blurred background -->
-        <div class="absolute inset-0 bg-cover bg-[top_right] md:bg-top"
-            :style="{ backgroundImage: `url(${heroBg})` }"></div>
+        <div class="absolute inset-0 bg-cover bg-[top_right] md:bg-top" :style="{ backgroundImage: `url(${heroBg})` }">
+        </div>
 
         <!-- Dark overlay -->
         <div class="absolute inset-0 bg-black/50"></div>
@@ -22,19 +22,23 @@
                     Experience authentic flavors crafted with love and fresh ingredients.
                 </p>
 
-                <button class="px-6 py-3 rounded-full font-semibold
+                <!-- <button to="#menu" class="px-6 py-3 rounded-full font-semibold
         bg-gradient-to-r from-orange-400 to-red-500
         hover:scale-105 transition">
                     Explore Menu
-                </button>
+                </button> -->
+                <a href="#menu" class="px-6 py-3 rounded-full font-semibold
+   bg-gradient-to-r from-orange-400 to-red-500
+   hover:scale-105 transition inline-block">
+                    Explore Menu
+                </a>
 
             </div>
 
             <!-- RIGHT IMAGE -->
             <div class="flex justify-center md:justify-end">
 
-                <img :src="heroImage"
-                    class="rounded-3xl shadow-2xl w-64 sm:w-80 md:w-full max-w-md object-cover" />
+                <img :src="heroImage" class="rounded-3xl shadow-2xl w-64 sm:w-80 md:w-full max-w-md object-cover" />
 
             </div>
 

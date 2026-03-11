@@ -71,7 +71,7 @@
 
             <!-- Order Button -->
 
-            <button class="w-full py-2 rounded-xl font-medium
+            <button @click="joinNow(`I want to order ${dish.name}`)" class="w-full py-2 rounded-xl font-medium
                    bg-gradient-to-r from-orange-400 to-red-500
                    text-white transition-all duration-300
                    hover:shadow-lg hover:scale-105 active:scale-95">
@@ -99,47 +99,55 @@
 
 
 <script>
+
+import dal from '../assets/dal_menu.png'
+import drink from '../assets/drink_menu.png'
+import nan from '../assets/nan_menu.png'
+import paneer from '../assets/paneer_menu.png'
+import rice from '../assets/rice_menu.png'
+
+
 export default {
 
   name: "MenuSection",
 
   data() {
     return {
-
+      message:'',
       selected: "All",
 
-      categories: ["All", "Western", "Indian", "Drinks"],
+      categories: ["All", "Indian", "Drinks"],
 
       dishes: [
 
         {
-          name: "Margherita Pizza",
+          name: "Dal Tadka",
           price: 299,
-          category: "Western",
-          image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800",
-          description: "Classic Italian pizza with fresh mozzarella"
+          category: "Indian",
+          image: dal,
+          description: "Classic Indian dal with spicy tadka"
         },
         {
-          name: "Creamy Pasta",
-          price: "249",
-          category: "Western",
-          image: "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=800",
-          description: "Classic Mexican Pasta with fresh vegetables and cheese"
+          name: "Nan Roti",
+          price: "50",
+          category: "Indian",
+          image: nan,
+          description: "Fluffy and Heavy Butter Loaded Nan's"
         },
         {
-          name: "Veg Burger",
+          name: "Paneer Dishes",
           price: "179",
-          category: "Western",
-          image: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=800",
-          description: "Experience Mouthwatering Veg Burger with fresh vegetables and cheese"
+          category: "Indian",
+          image: paneer,
+          description: "Experience  Mouthwatering Cubed Paneer dishes"
         },
 
         {
-          name: "Samosa",
-          price: 250,
+          name: "Rices",
+          price: 120,
           category: "Indian",
-          image: "https://images.unsplash.com/photo-1601050690597-df0568f70950",
-          description: "Enjoy hot samosa with tangy chutney"
+          image: rice,
+          description: "Enjoy various rice dishes with aromatic flavors and spices"
         },
 
         {
@@ -151,18 +159,25 @@ export default {
         },
 
         {
-          name: "Cold Coffee",
+          name: "Cold Drinks",
           price: 150,
           category: "Drinks",
-          image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
-          description: "Chilled creamy coffee"
+          image: drink,
+          description: "Chilled beverages to refresh your plate"
         }
-
       ]
-
     }
   },
+  methods: {
+    joinNow(message) {
+      const phone = "918591772677"
+      // const message = "Hello, I want to join IronCore Gym. Please share membership details."
+      this.message = message;
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
 
+      window.open(url, "_blank")
+    },
+  },
   computed: {
 
     filteredDishes() {

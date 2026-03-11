@@ -69,7 +69,7 @@
 
           <!-- QR Code -->
 
-          <div class="text-center">
+          <!-- <div class="text-center">
 
             <h3 class="text-xl font-semibold mb-4">
               Scan to Order
@@ -82,7 +82,7 @@
               Scan to order via WhatsApp
             </p>
 
-          </div>
+          </div> -->
 
         </div>
 

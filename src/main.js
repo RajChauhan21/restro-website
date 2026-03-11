@@ -6,9 +6,10 @@ import "aos/dist/aos.css"
 
 const app = createApp(App)
 
-app.mount("#app")
-
 AOS.init({
-    duration: 800,
+    duration: 600,
     once: true
 })
+
+app.mount("#app")
+
