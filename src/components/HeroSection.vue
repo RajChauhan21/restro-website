@@ -45,13 +45,17 @@
         </div>
 
     </section>
-
+    <InfiniteCarousel/>
 </template>
 
 <script>
 import heroImage from '../assets/image.png';
+import InfiniteCarousel from './InfiniteCarousel.vue';
 export default {
     name: "HeroSection",
+    components:{
+        InfiniteCarousel
+    },
     data() {
         return {
             heroBg: new URL('../assets/image.png', import.meta.url).href

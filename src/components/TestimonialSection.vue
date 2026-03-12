@@ -103,7 +103,7 @@ name: "Rahul Sharma",
 role: "Food Blogger",
 rating: 5,
 text: "Absolutely amazing food! The flavors are authentic and the ambience is fantastic.",
-image: "https://randomuser.me/api/portraits/men/32.jpg"
+image: "https://randomuser.me/api/portraits/men/76.jpg"
 },
 
 {
@@ -111,7 +111,7 @@ name: "Priya Mehta",
 role: "Regular Customer",
 rating: 5,
 text: "One of the best restaurants in the city. Fast service and delicious dishes.",
-image: "https://randomuser.me/api/portraits/women/44.jpg"
+image: "https://randomuser.me/api/portraits/women/30.jpg"
 },
 
 {
