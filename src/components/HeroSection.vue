@@ -15,7 +15,7 @@
             <div class="text-white text-center md:text-left">
 
                 <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                    Delicious Food <span class="text-orange-400">Delivered Fresh</span>
+                    Delicious Food <span class="text-red-400">Delivered Fresh</span>
                 </h1>
 
                 <p class="text-gray-200 mb-6 max-w-lg mx-auto md:mx-0 md:mt-19 md:text-lg">
@@ -28,8 +28,8 @@
                     Explore Menu
                 </button> -->
                 <a href="#menu" class="px-6 py-3 rounded-full font-semibold
-   bg-gradient-to-r from-orange-400 to-red-500
-   hover:scale-105 transition inline-block">
+   bg-gradient-to-r from-red-400 to-red-500
+   hover:scale-105 hover:from-red-500 hover:to-red-600 transition inline-block">
                     Explore Menu
                 </a>
 

@@ -7,6 +7,7 @@ import TestimonialSection from './components/TestimonialSection.vue'
 import ReservationForm from './components/ReservationForm.vue'
 import ContactVisitSection from './components/ContactVisitSection.vue';
 import AmenitiesSection from './components/AmenitiesSection.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import AmenitiesSection from './components/AmenitiesSection.vue';
   <AmenitiesSection/>
   <ReservationForm/>
   <ContactVisitSection/>
+  <Footer/>
 </template>
 
 <style scoped>

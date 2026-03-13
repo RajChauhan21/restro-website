@@ -26,12 +26,12 @@
 
           <!-- glowing hover effect -->
           <div
-            class="absolute inset-0 rounded-3xl bg-gradient-to-br from-orange-400/10 to-red-400/10 opacity-0 group-hover:opacity-100 transition">
+            class="absolute inset-0 rounded-3xl bg-gradient-to-br from-red-400/10 to-red-500/10 opacity-0 group-hover:opacity-100 transition">
           </div>
 
           <!-- icon -->
           <div class="w-16 h-16 flex items-center justify-center rounded-2xl
-          bg-gradient-to-br from-orange-400 to-red-500
+          bg-gradient-to-br from-red-400 to-red-700
           text-white text-2xl shadow-lg mb-6
           group-hover:scale-110 transition">
             {{ service.icon }}

@@ -72,7 +72,7 @@
             <!-- Order Button -->
 
             <button @click="joinNow(`I want to order ${dish.name}`)" class="relative z-10 w-full py-2 rounded-xl font-medium
-                   bg-gradient-to-r from-orange-400 to-red-500
+                   bg-gradient-to-r from-red-400 to-red-500
                    text-white transition-all duration-300
                    hover:shadow-lg hover:scale-105 active:scale-95">
               Order Now

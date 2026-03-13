@@ -54,32 +54,32 @@
           <!-- Name -->
 
           <input v-model="name" type="text" placeholder="Your Name" class="w-full p-3 rounded-xl border border-gray-200
-                 focus:outline-none focus:ring-2 focus:ring-orange-400
+                 focus:outline-none focus:ring-2 focus:ring-red-400
                  transition" />
           <p v-if="errors.name" class="text-red-500 text-sm">{{ errors.name }}</p>
           <!-- Phone -->
 
           <input v-model="phone" type="tel" placeholder="Phone Number" class="w-full p-3 rounded-xl border border-gray-200
-                 focus:outline-none focus:ring-2 focus:ring-orange-400
+                 focus:outline-none focus:ring-2 focus:ring-red-400
                  transition" />
           <p v-if="errors.phone" class="text-red-500 text-sm">{{ errors.phone }}</p>
           <!-- Date -->
 
           <input v-model="date" :min="today" type="date" class="w-full p-3 rounded-xl border border-gray-200
-                 focus:outline-none focus:ring-2 focus:ring-orange-400
+                 focus:outline-none focus:ring-2 focus:ring-red-400
                  transition" />
           <p v-if="errors.date" class="text-red-500 text-sm">{{ errors.date }}</p>
           <!-- People -->
 
           <input v-model="people" type="number" placeholder="Number of Guests" class="w-full p-3 rounded-xl border border-gray-200
-                 focus:outline-none focus:ring-2 focus:ring-orange-400
+                 focus:outline-none focus:ring-2 focus:ring-red-400
                  transition" />
           <p v-if="errors.people" class="text-red-500 text-sm">{{ errors.people }}</p>
           <!-- Button -->
 
           <button type="submit" class="w-full py-3 rounded-xl font-semibold text-white
-                 bg-gradient-to-r from-orange-400 to-red-500
-                 hover:from-orange-500 hover:to-red-600
+                 bg-gradient-to-r from-red-400 to-red-500
+                 hover:from-red-500 hover:to-red-600
                  transition-all duration-300
                  hover:shadow-lg hover:scale-[1.02] active:scale-95">
             Reserve via WhatsApp
