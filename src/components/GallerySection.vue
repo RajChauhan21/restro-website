@@ -1,6 +1,6 @@
 <template>
 
-<section class="py-14 px-6 relative overflow-hidden">
+<section id="gallery" class="py-14 px-6 relative overflow-hidden">
 
   <!-- Background Glow -->
 

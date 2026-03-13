@@ -81,7 +81,7 @@
 
         <li>
           <a href="https://wa.me/919876543210" class="px-6 py-2 rounded-full text-white
-                 bg-gradient-to-r from-orange-400 to-red-500">
+                 bg-gradient-to-r from-red-400 to-red-500">
             Order Now
           </a>
         </li>

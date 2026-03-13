@@ -11,7 +11,7 @@
 
         <div class="relative max-w-7xl mx-auto px-6 py-16">
 
-            <div class="grid md:grid-cols-3 gap-12">
+            <div class="grid md:grid-cols-2 gap-12">
 
                 <!-- Brand -->
 
@@ -52,24 +52,6 @@
                     </ul>
 
                 </div>
-
-
-                <!-- Opening Hours -->
-
-                <div>
-
-                    <h3 class="font-semibold text-lg mb-4">Opening Hours</h3>
-
-                    <ul class="space-y-2 text-gray-400">
-
-                        <li>Mon - Fri : 10:00 AM - 11:00 PM</li>
-                        <li>Saturday : 11:00 AM - 12:00 AM</li>
-                        <li>Sunday : 11:00 AM - 12:00 AM</li>
-
-                    </ul>
-
-                </div>
-
             </div>
 
 

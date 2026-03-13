@@ -22,7 +22,7 @@
         <button v-for="c in categories" :key="c" @click="selected = c" class="px-6 py-2 rounded-full font-medium transition-all duration-300
                backdrop-blur-md border shadow-md
                hover:scale-105 active:scale-95" :class="selected === c
-                ? 'bg-gradient-to-r from-orange-400 to-red-500 text-white shadow-lg'
+                ? 'bg-gradient-to-r from-red-400 to-red-500 text-white shadow-lg'
                 : 'bg-white/60 hover:bg-orange-100 text-gray-700'">
           {{ c }}
         </button>
